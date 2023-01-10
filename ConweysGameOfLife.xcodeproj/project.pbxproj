@@ -20,6 +20,7 @@
 		71E9058B296D78D900371344 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9058A296D78D900371344 /* Point.swift */; };
 		71E9058D296D7AA200371344 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9058C296D7AA200371344 /* Logic.swift */; };
 		71E9058F296D986900371344 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9058E296D986900371344 /* Direction.swift */; };
+		71E90591296DEEAE00371344 /* OneCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E90590296DEEAE00371344 /* OneCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		71E9058A296D78D900371344 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		71E9058C296D7AA200371344 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
 		71E9058E296D986900371344 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		71E90590296DEEAE00371344 /* OneCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				71698FC0296C86F800DCD79C /* ConweysGameOfLifeApp.swift */,
 				71698FC2296C86F800DCD79C /* ContentView.swift */,
+				71E90590296DEEAE00371344 /* OneCellView.swift */,
 				71E90588296D745A00371344 /* CellState.swift */,
 				71E9058A296D78D900371344 /* Point.swift */,
 				71E9058C296D7AA200371344 /* Logic.swift */,
@@ -280,6 +283,7 @@
 				71E9058B296D78D900371344 /* Point.swift in Sources */,
 				71E9058F296D986900371344 /* Direction.swift in Sources */,
 				71E9058D296D7AA200371344 /* Logic.swift in Sources */,
+				71E90591296DEEAE00371344 /* OneCellView.swift in Sources */,
 				71698FCD296C86FA00DCD79C /* ConweysGameOfLife.xcdatamodeld in Sources */,
 				71698FC3296C86F800DCD79C /* ContentView.swift in Sources */,
 				71698FC1296C86F800DCD79C /* ConweysGameOfLifeApp.swift in Sources */,

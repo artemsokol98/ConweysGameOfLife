@@ -18,8 +18,14 @@ struct ContentView: View {
     
     
     var body: some View {
-        
-        
+        HStack {
+            ForEach(0...5, id: \.self) { _ in
+                OneCellView(width: 10, state: .alive)
+                    .padding(.zero)
+            }
+
+        }
+        /*
        ScrollView {
            LazyVGrid(columns: config, spacing: 20) {
                ForEach(items, id: \.self) { item in
@@ -29,7 +35,7 @@ struct ContentView: View {
            }
        }
        .frame(maxHeight: 350)
-     
+     */
     }
          
 }
