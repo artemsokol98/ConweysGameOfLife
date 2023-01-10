@@ -13,7 +13,13 @@ struct ContentView: View {
        let config = [
            GridItem(.adaptive(minimum: 40))
        ]
+     
+    //var twoDimensionalArray = [[CellState]]()
+    
+    
     var body: some View {
+        
+        
        ScrollView {
            LazyVGrid(columns: config, spacing: 20) {
                ForEach(items, id: \.self) { item in
@@ -23,7 +29,7 @@ struct ContentView: View {
            }
        }
        .frame(maxHeight: 350)
-  
+     
     }
          
 }
