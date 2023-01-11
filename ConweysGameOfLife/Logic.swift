@@ -12,34 +12,46 @@ class Logic {
     static let shared = Logic()
     
     var arrayColumn = [Point]()
+    
+    var lengthOfOneSide = 40
     //var arrayRow = [[Point]]()
     
     func createArrayWithAllAliveCells() {
         
-        
-        for xCoordinate in 0..<5 {
-            for yCoordinate in 0..<5 {
+        for xCoordinate in 0..<lengthOfOneSide {
+            for yCoordinate in 0..<lengthOfOneSide {
                 self.arrayColumn.append(Point(x: xCoordinate, y: yCoordinate, state: CellState.allCases.randomElement()!))
+                /*
+                var alive = false
+                if xCoordinate == 0 && yCoordinate == 2 {
+                    alive = true
+                }
+                if xCoordinate == 1 && yCoordinate == 3 {
+                    alive = true
+                }
+                if xCoordinate == 2 && (yCoordinate == 1 || yCoordinate == 2 || yCoordinate == 3) {
+                    alive = true
+                }
+                var state: CellState
+                if alive == true { state = .alive } else { state = .dead}
+                
+                self.arrayColumn.append(Point(x: xCoordinate, y: yCoordinate, state: state))
+                */
             }
         }
-
-        //var arrayColumn = [Int](repeating: , count: 20)
-        //var arrayRow = [[Int]](repeating: arrayColumn, count: 1)
         
         for (index, item) in self.arrayColumn.enumerated() {
             print("\(index) \(item.x) \(item.y) \(item.state)")
         }
-        
-        compareWithNeighboorCell(point: arrayColumn[12])
-        
-        
+        //compareWithNeighboorCell(point: arrayColumn[12])
+
     }
     
-    func compareWithNeighboorCell(point: Point) -> Point {
+    func compareWithNeighboorCell(array: [Point], point: Point) -> Point {
         
         var state: CellState
                 
-        print("\(point.x) \(point.y)")
+        print(point.x, point.y, point.state)
         var numberOfAliveNeightboors = 0
         
         let downLeftNeighboor = Direction(x: point.x - 1, y: point.y - 1) //Point(x: point.x - 1, y: point.y - 1, state: point.state)
@@ -59,31 +71,25 @@ class Logic {
         ]
         
         for item in neighboors {
-            
-            
-            
             var x = item.x
             var y = item.y
-            
-            if x < 0 { x = 4 } // length of side square - 1
-            if x > 4 { x = 0 }
-            if y < 0 { y = 4 }
-            if y > 4 { y = 0 }
-            
-            if ((x<0 && y<0)||(x<0 && y>4)||(x>4 && y<0)||(x>4 && y>4)) {
+            if ((x<0 && y<0)||(x<0 && y>lengthOfOneSide - 1)||(x>lengthOfOneSide - 1 && y<0)||(x>lengthOfOneSide - 1 && y>lengthOfOneSide - 1)) {
                 continue
             }
             
-            print(item)
-            print((item.x * 5) + item.y) // 5 - length of square
-            
-            
-            
-            
-            let gotPoint = arrayColumn[(item.x * 5) + item.y]
-            print("\(gotPoint.x) \(gotPoint.y) \(gotPoint.state)")
+            if x < 0 { x = lengthOfOneSide - 1 } // length of side square - 1
+            if x > lengthOfOneSide - 1 { x = 0 }
+            if y < 0 { y = lengthOfOneSide - 1 }
+            if y > lengthOfOneSide - 1 { y = 0 }
+
+            //print(item)
+            //print((x * lengthOfOneSide) + y) // 5 - length of square
+
+            let gotPoint = array[(x * lengthOfOneSide) + y] // numberOfLength
+            //print("\(gotPoint.x) \(gotPoint.y) \(gotPoint.state)")
             if gotPoint.state == .alive { numberOfAliveNeightboors += 1 }
         }
+        //print(point.x, point.y, point.state, numberOfAliveNeightboors)
         
         if numberOfAliveNeightboors < 2 || numberOfAliveNeightboors > 3 {
             state = .dead
@@ -103,8 +109,10 @@ class Logic {
     func generateNewArray(oldArray: [Point]) -> [Point] {
         var newArray = [Point]()
         for item in oldArray {
-            newArray.append(compareWithNeighboorCell(point: item))
+            newArray.append(compareWithNeighboorCell(array: oldArray, point: item))
         }
+        print(newArray)
         return newArray
+        
     }
 }

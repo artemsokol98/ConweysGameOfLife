@@ -13,3 +13,8 @@ struct Point {
     
     var state: CellState
 }
+
+extension Point: Hashable {}
+
+extension Point: Equatable {}
+

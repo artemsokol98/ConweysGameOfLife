@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct OneCellView: View {
-    @State var width: CGFloat
-    @State var state: CellState
+    var width: CGFloat
+    var state: CellState
     var body: some View {
+        
         Rectangle()
             .fill(chooseColor(cellState: state))
             .frame(width: width, height: width, alignment: .center)

@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct ConweysGameOfLifeApp: App {
     let persistenceController = PersistenceController.shared
-    let logic = Logic.shared.createArrayWithAllAliveCells()
+    
     
 
     var body: some Scene {
