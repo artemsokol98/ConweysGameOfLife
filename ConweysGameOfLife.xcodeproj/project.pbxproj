@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		714DD806296F4B66005A4476 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DD805296F4B66005A4476 /* UIScreen.swift */; };
 		714DD808296F5791005A4476 /* ButtonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DD807296F5791005A4476 /* ButtonName.swift */; };
+		715B852A297027D0005DCB12 /* MainScreenConweysGameOfLife.gif in Resources */ = {isa = PBXBuildFile; fileRef = 715B8529297027D0005DCB12 /* MainScreenConweysGameOfLife.gif */; };
+		715B852C297027EA005DCB12 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 715B852B297027EA005DCB12 /* README.md */; };
 		71667348296EE8900029BB7B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71667347296EE8900029BB7B /* ContentViewModel.swift */; };
 		71698FC1296C86F800DCD79C /* ConweysGameOfLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FC0296C86F800DCD79C /* ConweysGameOfLifeApp.swift */; };
 		71698FC3296C86F800DCD79C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FC2296C86F800DCD79C /* MainView.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		714DD805296F4B66005A4476 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		714DD807296F5791005A4476 /* ButtonName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonName.swift; sourceTree = "<group>"; };
+		715B8529297027D0005DCB12 /* MainScreenConweysGameOfLife.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = MainScreenConweysGameOfLife.gif; sourceTree = "<group>"; };
+		715B852B297027EA005DCB12 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71667347296EE8900029BB7B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		71698FBD296C86F800DCD79C /* ConweysGameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConweysGameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71698FC0296C86F800DCD79C /* ConweysGameOfLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConweysGameOfLifeApp.swift; sourceTree = "<group>"; };
@@ -91,9 +95,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		715B8528297027A6005DCB12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				715B8529297027D0005DCB12 /* MainScreenConweysGameOfLife.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		71698FB4296C86F800DCD79C = {
 			isa = PBXGroup;
 			children = (
+				715B852B297027EA005DCB12 /* README.md */,
+				715B8528297027A6005DCB12 /* Resources */,
 				71698FBF296C86F800DCD79C /* ConweysGameOfLife */,
 				71698FD5296C86FA00DCD79C /* ConweysGameOfLifeTests */,
 				71698FDF296C86FA00DCD79C /* ConweysGameOfLifeUITests */,
@@ -295,6 +309,8 @@
 			files = (
 				71698FC8296C86FA00DCD79C /* Preview Assets.xcassets in Resources */,
 				71698FC5296C86FA00DCD79C /* Assets.xcassets in Resources */,
+				715B852C297027EA005DCB12 /* README.md in Resources */,
+				715B852A297027D0005DCB12 /* MainScreenConweysGameOfLife.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
