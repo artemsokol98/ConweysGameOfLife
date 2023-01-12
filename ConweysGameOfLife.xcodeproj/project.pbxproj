@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714DD806296F4B66005A4476 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DD805296F4B66005A4476 /* UIScreen.swift */; };
+		714DD808296F5791005A4476 /* ButtonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714DD807296F5791005A4476 /* ButtonName.swift */; };
 		71667348296EE8900029BB7B /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71667347296EE8900029BB7B /* ContentViewModel.swift */; };
 		71698FC1296C86F800DCD79C /* ConweysGameOfLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FC0296C86F800DCD79C /* ConweysGameOfLifeApp.swift */; };
-		71698FC3296C86F800DCD79C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FC2296C86F800DCD79C /* ContentView.swift */; };
+		71698FC3296C86F800DCD79C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FC2296C86F800DCD79C /* MainView.swift */; };
 		71698FC5296C86FA00DCD79C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71698FC4296C86FA00DCD79C /* Assets.xcassets */; };
 		71698FC8296C86FA00DCD79C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71698FC7296C86FA00DCD79C /* Preview Assets.xcassets */; };
-		71698FCA296C86FA00DCD79C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FC9296C86FA00DCD79C /* Persistence.swift */; };
 		71698FCD296C86FA00DCD79C /* ConweysGameOfLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71698FCB296C86FA00DCD79C /* ConweysGameOfLife.xcdatamodeld */; };
 		71698FD7296C86FA00DCD79C /* ConweysGameOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FD6296C86FA00DCD79C /* ConweysGameOfLifeTests.swift */; };
 		71698FE1296C86FA00DCD79C /* ConweysGameOfLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FE0296C86FA00DCD79C /* ConweysGameOfLifeUITests.swift */; };
 		71698FE3296C86FA00DCD79C /* ConweysGameOfLifeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71698FE2296C86FA00DCD79C /* ConweysGameOfLifeUITestsLaunchTests.swift */; };
+		71E0D2F3296FF86200AFA82B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E0D2F2296FF86200AFA82B /* Constants.swift */; };
 		71E90589296D745A00371344 /* CellState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E90588296D745A00371344 /* CellState.swift */; };
 		71E9058B296D78D900371344 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9058A296D78D900371344 /* Point.swift */; };
 		71E9058D296D7AA200371344 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9058C296D7AA200371344 /* Logic.swift */; };
@@ -42,19 +44,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		714DD805296F4B66005A4476 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		714DD807296F5791005A4476 /* ButtonName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonName.swift; sourceTree = "<group>"; };
 		71667347296EE8900029BB7B /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		71698FBD296C86F800DCD79C /* ConweysGameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConweysGameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71698FC0296C86F800DCD79C /* ConweysGameOfLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConweysGameOfLifeApp.swift; sourceTree = "<group>"; };
-		71698FC2296C86F800DCD79C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71698FC2296C86F800DCD79C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		71698FC4296C86FA00DCD79C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71698FC7296C86FA00DCD79C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		71698FC9296C86FA00DCD79C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		71698FCC296C86FA00DCD79C /* ConweysGameOfLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConweysGameOfLife.xcdatamodel; sourceTree = "<group>"; };
 		71698FD2296C86FA00DCD79C /* ConweysGameOfLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConweysGameOfLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71698FD6296C86FA00DCD79C /* ConweysGameOfLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConweysGameOfLifeTests.swift; sourceTree = "<group>"; };
 		71698FDC296C86FA00DCD79C /* ConweysGameOfLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConweysGameOfLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71698FE0296C86FA00DCD79C /* ConweysGameOfLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConweysGameOfLifeUITests.swift; sourceTree = "<group>"; };
 		71698FE2296C86FA00DCD79C /* ConweysGameOfLifeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConweysGameOfLifeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71E0D2F2296FF86200AFA82B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71E90588296D745A00371344 /* CellState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellState.swift; sourceTree = "<group>"; };
 		71E9058A296D78D900371344 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		71E9058C296D7AA200371344 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
@@ -110,16 +114,11 @@
 		71698FBF296C86F800DCD79C /* ConweysGameOfLife */ = {
 			isa = PBXGroup;
 			children = (
-				71698FC0296C86F800DCD79C /* ConweysGameOfLifeApp.swift */,
-				71698FC2296C86F800DCD79C /* ContentView.swift */,
-				71E90590296DEEAE00371344 /* OneCellView.swift */,
-				71667347296EE8900029BB7B /* ContentViewModel.swift */,
-				71E90588296D745A00371344 /* CellState.swift */,
-				71E9058A296D78D900371344 /* Point.swift */,
-				71E9058C296D7AA200371344 /* Logic.swift */,
-				71E9058E296D986900371344 /* Direction.swift */,
+				71E0D2F7296FFA8800AFA82B /* ViewModel */,
+				71E0D2F5296FFA5500AFA82B /* Views */,
+				71E0D2F4296FFA4000AFA82B /* Models */,
+				71E0D2F8296FFAC000AFA82B /* Support */,
 				71698FC4296C86FA00DCD79C /* Assets.xcassets */,
-				71698FC9296C86FA00DCD79C /* Persistence.swift */,
 				71698FCB296C86FA00DCD79C /* ConweysGameOfLife.xcdatamodeld */,
 				71698FC6296C86FA00DCD79C /* Preview Content */,
 			);
@@ -149,6 +148,45 @@
 				71698FE2296C86FA00DCD79C /* ConweysGameOfLifeUITestsLaunchTests.swift */,
 			);
 			path = ConweysGameOfLifeUITests;
+			sourceTree = "<group>";
+		};
+		71E0D2F4296FFA4000AFA82B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71E9058C296D7AA200371344 /* Logic.swift */,
+				71E90588296D745A00371344 /* CellState.swift */,
+				71E9058A296D78D900371344 /* Point.swift */,
+				714DD807296F5791005A4476 /* ButtonName.swift */,
+				71E9058E296D986900371344 /* Direction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71E0D2F5296FFA5500AFA82B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71698FC2296C86F800DCD79C /* MainView.swift */,
+				71E90590296DEEAE00371344 /* OneCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		71E0D2F7296FFA8800AFA82B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				71667347296EE8900029BB7B /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		71E0D2F8296FFAC000AFA82B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				71698FC0296C86F800DCD79C /* ConweysGameOfLifeApp.swift */,
+				714DD805296F4B66005A4476 /* UIScreen.swift */,
+				71E0D2F2296FF86200AFA82B /* Constants.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,16 +319,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71698FCA296C86FA00DCD79C /* Persistence.swift in Sources */,
 				71E90589296D745A00371344 /* CellState.swift in Sources */,
 				71E9058B296D78D900371344 /* Point.swift in Sources */,
+				714DD808296F5791005A4476 /* ButtonName.swift in Sources */,
 				71E9058F296D986900371344 /* Direction.swift in Sources */,
 				71667348296EE8900029BB7B /* ContentViewModel.swift in Sources */,
 				71E9058D296D7AA200371344 /* Logic.swift in Sources */,
+				714DD806296F4B66005A4476 /* UIScreen.swift in Sources */,
 				71E90591296DEEAE00371344 /* OneCellView.swift in Sources */,
 				71698FCD296C86FA00DCD79C /* ConweysGameOfLife.xcdatamodeld in Sources */,
-				71698FC3296C86F800DCD79C /* ContentView.swift in Sources */,
+				71698FC3296C86F800DCD79C /* MainView.swift in Sources */,
 				71698FC1296C86F800DCD79C /* ConweysGameOfLifeApp.swift in Sources */,
+				71E0D2F3296FF86200AFA82B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

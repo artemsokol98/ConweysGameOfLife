@@ -8,13 +8,7 @@
 import Foundation
 
 struct Point {
-    var x: Int // column
-    var y: Int // row
-    
+    var x: Int
+    var y: Int 
     var state: CellState
 }
-
-extension Point: Hashable {}
-
-extension Point: Equatable {}
-
