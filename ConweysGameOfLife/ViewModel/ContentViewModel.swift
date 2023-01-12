@@ -16,12 +16,12 @@ class ContentViewModel: ObservableObject {
     @Published var lengthOfSide: Int
     
     init() {
-        arrayOfCells = logic.createArrayWithAllAliveCells()
+        arrayOfCells = logic.createArrayWithCells()
         lengthOfSide = logic.lengthOfOneSide
     }
     
     func getNewRandomCells() {
-        arrayOfCells = logic.createArrayWithAllAliveCells()
+        arrayOfCells = logic.createArrayWithCells()
     }
     
     func startTimer() {

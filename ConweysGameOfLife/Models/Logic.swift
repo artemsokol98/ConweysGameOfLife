@@ -12,7 +12,7 @@ class Logic {
     
     var lengthOfOneSide = Constants.lengthOfSide
     
-    func createArrayWithAllAliveCells() -> [Point] {
+    func createArrayWithCells() -> [Point] {
         var arrayOfColumn = [Point]()
         for xCoordinate in 0..<lengthOfOneSide {
             for yCoordinate in 0..<lengthOfOneSide {
